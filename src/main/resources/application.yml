@@ -1,0 +1,16 @@
+server:
+  # ????HTTP??????8080
+  port: 8081
+spring:
+  # ????
+  servlet:
+    multipart:
+      # ??????
+      max-file-size: 100MB
+      # ??????????
+      max-request-size: 200MB
+  mvc:
+    static-path-pattern: /imagess/**
+  resources:
+    static-locations: file:D:/ruoyi/uploadPath/
+profile: D:/ruoyi/uploadPath/
